@@ -31,6 +31,9 @@ class LineChartStrategy implements ChartStrategy {
             }]
         };
     }
+    handleInteraction(params: unknown): void {
+        console.log('LineChartStrategy handleInteraction', params);
+    }
 }
 
 // 具体策略实现 - 饼图
@@ -42,6 +45,9 @@ class PieChartStrategy implements ChartStrategy {
                 data: data.series
             }]
         };
+    }
+    handleInteraction(params: unknown): void {
+        console.log('PieChartStrategy handleInteraction', params);
     }
 }
 
